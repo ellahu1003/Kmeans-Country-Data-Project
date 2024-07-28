@@ -12,7 +12,7 @@ This project implements a K-means clustering algorithm to group countries based 
 6) Seaborn
 
 ## Dataset
-The dataset used for this project is country_data.csv, containing various socio-economic and health-related attributes for different countries.
+The dataset used for this project is 'country_data.csv', containing various socio-economic and health-related attributes for different countries.
 
 ## Setuo and installation
 1) Clone the repository:
@@ -40,11 +40,11 @@ Kmeans_countries/
 │   └── Kmeans_countries.ipynb
 │
 ├── results/
-│   └── clusters_visualization.png
-│   └──
-│   └──
-│   └──
-│   └──
+│   └── correlation_matrix_of_features.png
+│   └── elbow_method.png
+│   └── silhouette_score_method.png
+│   └── child_mortality_rate_vs_gdp_percapita.png
+│   └── inflation_vs_gdp_percapita.png
 │
 └── requirements.txt
 ```
@@ -53,8 +53,13 @@ Kmeans_countries/
 The requirements.txt file lists all the Python packages required to run the project. Install these dependencies to avoid any compatibility issues.
 
 ## Results
-1) Silhouette Score: [Insert Silhouette Score here]
-2) The clusters and their relationships are visualised in clusters_visualisation.png.
+1) k = 2
+2) Silhouette Score: [0.39]
+3) The features and their relationships are visualised using a heatmap in correlation_matrix_of_features.png.
+4) Determining the optimal number of k using the elbow method is visualised in elbow_method.png.
+5) Determining the optimal number of k using the silhouette score method is visualised in silhouette_score_method.png.
+6) The clusters for child mortality vs GDPP are visualised in child_mortality_rate_vs_gdp_percapita.png.
+7) The clusters for inflation vs GDPP are visualised in inflation_vs_gdp_percapita.png
 
 ## Conclusion
 1) Child Mortality Rate vs. GDP Per Capita:
