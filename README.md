@@ -17,7 +17,7 @@ The dataset used for this project is 'country_data.csv', containing various soci
 ## Setuo and installation
 1) Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/country-clustering.git
+   git clone https://github.com/ellahu1003/country-clustering.git
    cd country-clustering
    ```
 2) Install the required packages:
