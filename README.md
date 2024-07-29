@@ -22,7 +22,7 @@ The dataset used for this project is 'country_data.csv', containing various soci
    ```
 2) Install the required packages:
     ```bash
-    pip install -r requirements.txt
+    pip install -r Requirements.txt
     ```
 3) Run the Jupyter Notebook:
    ```bash
