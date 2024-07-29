@@ -14,7 +14,7 @@ This project implements a K-means clustering algorithm to group countries based 
 ## Dataset
 The dataset used for this project is 'country_data.csv', containing various socio-economic and health-related attributes for different countries.
 
-## Setuo and installation
+## Setuo and Installation
 1) Clone the repository:
    ```bash
    git clone https://github.com/ellahu1003/country-clustering.git
