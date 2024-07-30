@@ -14,21 +14,6 @@ This project implements a K-means clustering algorithm to group countries based 
 ## Dataset
 The dataset used for this project is 'country_data.csv', containing various socio-economic and health-related attributes for different countries.
 
-## Setuo and Installation
-1) Clone the repository:
-   ```bash
-   git clone https://github.com/ellahu1003/country-clustering.git
-   cd country-clustering
-   ```
-2) Install the required packages:
-    ```bash
-    pip install -r Requirements.txt
-    ```
-3) Run the Jupyter Notebook:
-   ```bash
-   jupyter notebook notebooks/Kmeans_countries.ipynb
-   ```
-
 ## Project Structure
 ```markdown
 Kmeans_countries/
@@ -49,11 +34,49 @@ Kmeans_countries/
 └── requirements.txt
 ```
 
+## Methodology
+1) Data Collection:
+   
+The project uses the 'country_data.csv' dataset, which was orginally sourced from Help.NGO. This international non-governmental organisation specialises in emergency response, preparedness, and risk mitigation. It includes various socio-economic and health-related attributes for different countries. The key features in the dataset are child mortality, exports, health spending, income, and GDP per capita.
+
+2) Data Preprcessing:
+   1. Loading the Data: The dataset is loaded using Pandas, a data manipulation library in Python.
+   2. Handling Missing Values: Missing values are not present in this dataset.
+   3. Feature Scaling: Features are scaled using normalisation to ensure uniformity and improve the performance of the K-means clustering algorithm.
+
+3) Explanatory Data Analysis (EDA):
+   1. Statistical Analysis: Descriptive statistics are computed to understand the distribution and basic statistics of the data.
+   2. Data Visualisation: Visual tools such as correlation matrices and scatter plots are used to identify patterns, correlations, and insights within the dataset.
+
+4) Clustering:
+   1. Elbow Method: The Elbow method is applied to determine the optimal number of clusters (k) by plotting the within-cluster sum of squares (WCSS) against the number of clusters. This is visualised in elbow_method.png.
+   2. Silhouette Score: The silhouette score method is used to evaluate the quality of the clusters and determine the optimal number of clusters. This is visualised in silhouette_score_method.png.
+   3. K-means Clustering: The K-means algorithm is implemented to cluster the countries based on the selected socio-economic and health features.
+
+5) Model Evaluation:
+   1. Silhouette Score: The silhouette score is calculated to assess the quality and cohesion of the clusters. 
+   2. Cluster Visualisation: Clusters are visualised to interpret the results.
+
+## Setup and Installation
+1) Clone the repository:
+   ```bash
+   git clone https://github.com/ellahu1003/country-clustering.git
+   cd country-clustering
+   ```
+2) Install the required packages:
+    ```bash
+    pip install -r Requirements.txt
+    ```
+3) Run the Jupyter Notebook:
+   ```bash
+   jupyter notebook notebooks/Kmeans_countries.ipynb
+   ```
+
 ## Requirements
 The 'Requirements.txt' file lists all the Python packages required to run the project. Install these dependencies to avoid any compatibility issues.
 
 ## Results
-1) k = 2
+1) optimum k = 2
 2) Silhouette Score: [0.39]
 3) The features and their relationships are visualised using a heatmap in correlation_matrix_of_features.png.
 4) Determining the optimal number of k using the elbow method is visualised in elbow_method.png.
