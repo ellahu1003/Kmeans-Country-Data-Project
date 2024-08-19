@@ -44,7 +44,7 @@ The project uses the 'country_data.csv' dataset, which was orginally sourced fro
    2. Handling Missing Values: Missing values are not present in this dataset.
    3. Feature Scaling: Features are scaled using normalisation to ensure uniformity and improve the performance of the K-means clustering algorithm.
 
-3) Explanatory Data Analysis (EDA):
+3) Exploratory Data Analysis (EDA):
    1. Statistical Analysis: Descriptive statistics are computed to understand the distribution and basic statistics of the data.
    2. Data Visualisation: Visual tools such as correlation matrices and scatter plots are used to identify patterns, correlations, and insights within the dataset.
 
